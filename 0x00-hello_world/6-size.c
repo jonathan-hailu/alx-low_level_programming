@@ -1,22 +1,12 @@
 #include <stdio.h>
+/*This program first includes the stdio.h header file, which contains the printf() function. Then, it defines a main() function, which prints the size of each of the following types: */
+int main() {
+  printf("Size of char: %zu\n", sizeof(char));
+  printf("Size of int: %zu\n", sizeof(int));
+  printf("Size of long int: %zu\n", sizeof(long int));
+  printf("Size of float: %zu\n", sizeof(float));
+  printf("Size of double: %zu\n", sizeof(double));
+  printf("Size of long double: %zu\n", sizeof(long double));
 
-/**
- * main - Entry point
- *
- * Description: using sizeof to print the size of various types.
- *
- * Return: Always 0 (Succesful)
-*/
-
-int main(void)
-{
-	/* sizeof evaluates the size of a variable */
-	printf("Size of a char: %lu byte(s)\n", sizeof(char));
-	printf("Size of an int: %lu byte(s)\n", sizeof(int));
-	printf("Size of an double: %lu byte(s)\n", sizeof(double));
-	printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
-	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
-	printf("Size of a float: %lu byte(s)\n", sizeof(float));
-
-	return (0);
+  return 0;
 }
